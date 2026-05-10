@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.23
 
 RUN apk add --no-cache unbound openssl ripgrep mawk loksh coreutils doas curl tar gzip && \
 	rm -f /etc/unbound/unbound.conf
